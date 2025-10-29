@@ -32,7 +32,7 @@ class RamIndex:
         distances, indices = self.index.search(query_embedding.astype(np.float32), k)
 
         results = []
-        for _, i in zip(distances[0], indices[0]):
-            results.append({"text": self.texts[i], "meta": self.meta[i]})
+        for score, i in zip(distances[0], indices[0]):
+            results.append({"score": score, "text": self.texts[i], "meta": self.meta[i]})
 
         return results
