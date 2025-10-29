@@ -6,7 +6,9 @@ from .encoder import Encoder
 
 class RamIndex:
 
-    def __init__(self,):
+    def __init__(
+        self,
+    ):
         self.index = None
         self.texts = []
         self.meta = []
@@ -31,9 +33,6 @@ class RamIndex:
 
         results = []
         for _, i in zip(distances[0], indices[0]):
-            results.append({
-                "text": self.texts[i],
-                "meta": self.meta[i]
-            })
+            results.append({"text": self.texts[i], "meta": self.meta[i]})
 
         return results
