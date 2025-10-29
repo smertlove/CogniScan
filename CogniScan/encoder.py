@@ -47,6 +47,7 @@ class Encoder:
 
             all_embeddings.append(embeddings)
 
+        # Шлепнем эмбединги в один массив
         return np.vstack(all_embeddings)
 
     def mean_pooling(self, model_output, attention_mask):
