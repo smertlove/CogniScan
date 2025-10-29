@@ -33,6 +33,8 @@ class RamIndex:
 
         results = []
         for score, i in zip(distances[0], indices[0]):
-            results.append({"score": score, "text": self.texts[i], "meta": self.meta[i]})
+            results.append(
+                {"score": score, "text": self.texts[i], "meta": self.meta[i]}
+            )
 
         return results
