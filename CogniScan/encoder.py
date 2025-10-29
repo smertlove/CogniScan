@@ -22,8 +22,10 @@ class Encoder:
         self.logger.info(f'Device set to use "{self.device}"')
         self.model.eval()
 
-    def encode(self, texts, batch_size=32):
-        """Convert list of texts to embeddings"""
+    @torch.no_grad()
+    def encode(self, texts: list[str], batch_size=32):
+        """Берет эмбединги от списка строк."""
+
         all_embeddings = []
 
         for i in range(0, len(texts), batch_size):
@@ -37,13 +39,11 @@ class Encoder:
                 return_tensors="pt",
             ).to(self.device)
 
-            # Get embeddings
-            with torch.no_grad():
-                outputs = self.model(**inputs)
-                embeddings = self.mean_pooling(
-                    outputs.last_hidden_state, inputs["attention_mask"]
-                )
-                embeddings = embeddings.cpu().numpy()
+            outputs = self.model(**inputs)
+            embeddings = self.mean_pooling(
+                outputs.last_hidden_state, inputs["attention_mask"]
+            )
+            embeddings = embeddings.cpu().numpy()
 
             all_embeddings.append(embeddings)
 
