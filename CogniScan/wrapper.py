@@ -76,7 +76,7 @@ class DRPSNPTO_Wrapper:
     def get_diseases_for_symptom(self, symptom: str):
 
         symptom_name = self.symptoms[symptom.lower()]
-        print(symptom_name)
+
         if symptom_name is None:
             return []
 

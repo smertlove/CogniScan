@@ -24,9 +24,15 @@ class RamIndex:
     def normalize(self, x):
         return faiss.normalize_L2(x)
 
-    def search(self, query: str, encoder: Encoder, k=3):
+    def search(self, query: str|list[str], encoder: Encoder, k=3):
 
-        query_embedding = encoder.encode([query])
+        if isinstance(query, list):
+            query_embedding = np.mean(encoder.encode(query), axis=0).reshape(1, -1)
+        else:
+            query_embedding = encoder.encode([query])
+
+        print(query_embedding.shape)
+
         self.normalize(query_embedding)
 
         distances, indices = self.index.search(query_embedding.astype(np.float32), k)
