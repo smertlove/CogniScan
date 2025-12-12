@@ -4,8 +4,6 @@ import re
 
 class CogniScanOntoWrapper:
 
-    replace_tmpl = "{}"
-
     def __init__(self, path: str):
         self.g = Graph()
         self.g.parse(path)
@@ -13,28 +11,28 @@ class CogniScanOntoWrapper:
         self.has_symptom_uri = self.get_uri_by_name("hasSymptom")
         self.has_description_uri = self.get_uri_by_name("hasDescription")
 
-        self._q_diseases_by_symptom = rf"""
+        self._q_diseases_by_symptom = """
             SELECT DISTINCT ?disease
             WHERE {{
-                ?disease <{self.has_symptom_uri}> <{self.replace_tmpl}> .
+                ?disease <{0}> <{1}> .
             }}
             ORDER BY ?disease_name
-        """
+        """.format(self.has_symptom_uri, "{1}")
 
-        self._q_symptoms_by_disease = rf"""
+        self._q_symptoms_by_disease = """
         SELECT DISTINCT ?symptom ?symptom_name
         WHERE {{
-            <{self.replace_tmpl}> <{self.has_symptom_uri}> ?symptom .
+            <{0}> <{1}> ?symptom .
         }}
         ORDER BY ?symptom_name
-        """
+        """.format("{0}", self.has_symptom_uri)
 
-        self._q_description_of_disease = rf"""
+        self._q_description_of_disease = """
         SELECT DISTINCT ?description
         WHERE {{
-            <{self.replace_tmpl}> <{self.has_description_uri}> ?symptom .
+            <{0}> <{1}> ?symptom .
         }}
-        """
+        """.format("{0}", self.has_description_uri)
 
     def uri2name(self, uri: str):
         uri_str = str(uri)
