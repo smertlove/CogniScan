@@ -61,16 +61,18 @@ class CogniScanOntoWrapper:
         return self.g.query(query)
 
     def get_diseases_by_symptom(self, symptom: str):
-        query = self._q_diseases_by_symptom.format(symptom)
+        symptom_uri = self.get_uri_by_name(symptom, normalize=True)
+        query = self._q_diseases_by_symptom.format(symptom_uri)
         return self.query_my_onto(query)
 
     def get_symptoms_by_disease(self, disease: str):
-        query = self._q_symptoms_by_disease.format(disease)
+        disease_uri = self.get_uri_by_name(disease, normalize=True)
+        query = self._q_symptoms_by_disease.format(disease_uri)
         return self.query_my_onto(query)
 
     def get_description_of_disease(self, disease: str):
-        print(self._q_description_of_disease)
-        query = self._q_description_of_disease.format(disease)
+        disease_uri = self.get_uri_by_name(disease, normalize=True)
+        query = self._q_description_of_disease.format(disease_uri)
         return self.query_my_onto(query)
 
 
