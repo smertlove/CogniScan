@@ -31,8 +31,6 @@ class RamIndex:
         else:
             query_embedding = encoder.encode([query])
 
-        print(query_embedding.shape)
-
         self.normalize(query_embedding)
 
         distances, indices = self.index.search(query_embedding.astype(np.float32), k)
