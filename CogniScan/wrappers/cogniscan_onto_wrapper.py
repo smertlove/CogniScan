@@ -13,26 +13,26 @@ class CogniScanOntoWrapper:
 
         self._q_diseases_by_symptom = """
             SELECT DISTINCT ?disease
-            WHERE {{
-                ?disease <{0}> <{1}> .
-            }}
+            WHERE {{{{
+                ?disease <{}> <{}> .
+            }}}}
             ORDER BY ?disease_name
-        """.format(self.has_symptom_uri, "{1}")
+        """.format(self.has_symptom_uri, "{}")
 
         self._q_symptoms_by_disease = """
         SELECT DISTINCT ?symptom ?symptom_name
-        WHERE {{
-            <{0}> <{1}> ?symptom .
-        }}
+        WHERE {{{{
+            <{}> <{}> ?symptom .
+        }}}}
         ORDER BY ?symptom_name
-        """.format("{0}", self.has_symptom_uri)
+        """.format("{}", self.has_symptom_uri)
 
         self._q_description_of_disease = """
         SELECT DISTINCT ?description
-        WHERE {{
-            <{0}> <{1}> ?symptom .
-        }}
-        """.format("{0}", self.has_description_uri)
+        WHERE {{{{
+            <{}> <{}> ?description .
+        }}}}
+        """.format("{}", self.has_description_uri)
 
     def uri2name(self, uri: str):
         uri_str = str(uri)
@@ -58,7 +58,12 @@ class CogniScanOntoWrapper:
         return None
 
     def query_my_onto(self, query):
-        return self.g.query(query)
+
+        result = []
+        for row in self.g.query(query):
+            result.append(self.uri2name(row[0]))
+
+        return result
 
     def get_diseases_by_symptom(self, symptom: str):
         symptom_uri = self.get_uri_by_name(symptom, normalize=True)
