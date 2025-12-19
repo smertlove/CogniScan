@@ -698,6 +698,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alex/ontologies/2025/11/untitled-ontology-7#Алкаш">
         <rdf:type rdf:resource="http://www.semanticweb.org/алена/ontologies/2025/8/psy_diseases_project#Наименования_больных"/>
         <mob_psycho_100:isSynonym rdf:resource="http://www.semanticweb.org/alex/ontologies/2025/11/untitled-ontology-7#Алкоголик"/>
+        <psy_diseases_project:SuffersFrom rdf:resource="http://www.semanticweb.org/alex/ontologies/2025/11/untitled-ontology-7#Синдром_зависимости"/>
         <mob_psycho_100:isOffensive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mob_psycho_100:isOffensive>
     </owl:NamedIndividual>
     
@@ -708,6 +709,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alex/ontologies/2025/11/untitled-ontology-7#Алкоголик">
         <rdf:type rdf:resource="http://www.semanticweb.org/алена/ontologies/2025/8/psy_diseases_project#Наименования_больных"/>
         <mob_psycho_100:isSynonym rdf:resource="http://www.semanticweb.org/alex/ontologies/2025/11/untitled-ontology-7#Алкаш"/>
+        <psy_diseases_project:SuffersFrom rdf:resource="http://www.semanticweb.org/alex/ontologies/2025/11/untitled-ontology-7#Синдром_зависимости"/>
         <mob_psycho_100:isOffensive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</mob_psycho_100:isOffensive>
     </owl:NamedIndividual>
     
@@ -816,6 +818,7 @@
         <mob_psycho_100:hasMCBcode>F32.2</mob_psycho_100:hasMCBcode>
         <psy_diseases_project:hasDuration>Несколько месяцев и более</psy_diseases_project:hasDuration>
         <psy_diseases_project:hasSuicideRisk rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:hasSuicideRisk>
+        <psy_diseases_project:requiresHospitalisation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:requiresHospitalisation>
     </owl:NamedIndividual>
     
 
@@ -840,6 +843,7 @@
         <mob_psycho_100:hasMCBcode>F32.3</mob_psycho_100:hasMCBcode>
         <psy_diseases_project:hasDuration>Несколько месяцев и более</psy_diseases_project:hasDuration>
         <psy_diseases_project:hasSuicideRisk rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:hasSuicideRisk>
+        <psy_diseases_project:requiresHospitalisation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:requiresHospitalisation>
     </owl:NamedIndividual>
     
 
@@ -901,6 +905,8 @@
 не соответствующими настроению психотическими симптомами
 Маниакальный ступор</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F30.2</mob_psycho_100:hasMCBcode>
+        <psy_diseases_project:hasSuicideRisk rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:hasSuicideRisk>
+        <psy_diseases_project:requiresHospitalisation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:requiresHospitalisation>
     </owl:NamedIndividual>
     
 
@@ -910,6 +916,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alex/ontologies/2025/11/untitled-ontology-7#Наркоман">
         <rdf:type rdf:resource="http://www.semanticweb.org/алена/ontologies/2025/8/psy_diseases_project#Наименования_больных"/>
         <mob_psycho_100:isSynonym rdf:resource="http://www.semanticweb.org/alex/ontologies/2025/11/untitled-ontology-7#Наркоша"/>
+        <psy_diseases_project:SuffersFrom rdf:resource="http://www.semanticweb.org/alex/ontologies/2025/11/untitled-ontology-7#Синдром_зависимости"/>
         <mob_psycho_100:isOffensive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</mob_psycho_100:isOffensive>
     </owl:NamedIndividual>
     
@@ -920,6 +927,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alex/ontologies/2025/11/untitled-ontology-7#Наркоша">
         <rdf:type rdf:resource="http://www.semanticweb.org/алена/ontologies/2025/8/psy_diseases_project#Наименования_больных"/>
         <mob_psycho_100:isSynonym rdf:resource="http://www.semanticweb.org/alex/ontologies/2025/11/untitled-ontology-7#Наркоман"/>
+        <psy_diseases_project:SuffersFrom rdf:resource="http://www.semanticweb.org/alex/ontologies/2025/11/untitled-ontology-7#Синдром_зависимости"/>
         <mob_psycho_100:isOffensive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mob_psycho_100:isOffensive>
     </owl:NamedIndividual>
     
@@ -1054,6 +1062,7 @@
         <mob_psycho_100:hasSymptom rdf:resource="http://www.semanticweb.org/eliza/ontologies/2025/9/mob_psycho_100#Навязчивые_мысли"/>
         <mob_psycho_100:hasSymptom rdf:resource="http://www.semanticweb.org/eliza/ontologies/2025/9/mob_psycho_100#Тревога"/>
         <mob_psycho_100:hasSymptom rdf:resource="http://www.semanticweb.org/алена/ontologies/2025/8/psy_diseases_project#беспорядочность_мысли"/>
+        <psy_diseases_project:Transitions rdf:resource="http://www.semanticweb.org/alex/ontologies/2025/11/untitled-ontology-7#Амнестический_синдром"/>
         <psy_diseases_project:hasName rdf:resource="http://www.semanticweb.org/alex/ontologies/2025/11/untitled-ontology-7#Алкоголик"/>
         <psy_diseases_project:hasName rdf:resource="http://www.semanticweb.org/alex/ontologies/2025/11/untitled-ontology-7#Наркоман"/>
         <mob_psycho_100:hasDescription>Группа поведенческих, мнестических и физиологических феноменов, развивающихся при неоднократном использования вещества, которые включают сильное желание принять наркотик, отсутствие самоконтроля, употребление на смотря на пагубные последствия, более высокий приоритет употребления наркотиков перед другими действиями и обязательствами, увеличенную толерантность к веществам.</mob_psycho_100:hasDescription>
@@ -1116,6 +1125,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alex/ontologies/2025/11/untitled-ontology-7#Торчок">
         <rdf:type rdf:resource="http://www.semanticweb.org/алена/ontologies/2025/8/psy_diseases_project#Наименования_больных"/>
         <mob_psycho_100:isSynonym rdf:resource="http://www.semanticweb.org/alex/ontologies/2025/11/untitled-ontology-7#Наркоман"/>
+        <psy_diseases_project:SuffersFrom rdf:resource="http://www.semanticweb.org/alex/ontologies/2025/11/untitled-ontology-7#Синдром_зависимости"/>
         <mob_psycho_100:isOffensive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mob_psycho_100:isOffensive>
     </owl:NamedIndividual>
     
@@ -1150,8 +1160,10 @@
         <mob_psycho_100:hasSymptom rdf:resource="http://www.semanticweb.org/eliza/ontologies/2025/9/mob_psycho_100#Усталость"/>
         <mob_psycho_100:hasSymptom rdf:resource="http://www.semanticweb.org/алена/ontologies/2025/8/psy_diseases_project#Депрессивное_расстройство_поведения"/>
         <mob_psycho_100:hasSymptom rdf:resource="http://www.semanticweb.org/алена/ontologies/2025/8/psy_diseases_project#головная_боль"/>
+        <psy_diseases_project:Transitions rdf:resource="http://www.semanticweb.org/alex/ontologies/2025/11/untitled-ontology-7#Синдром_зависимости"/>
         <mob_psycho_100:hasDescription>Употребление психотропного вещества, которое наносит ущерб здоровью. Повреждение может быть физическим (как в случаях гепатита от самоназначения введенных психотропных веществ) или психическим (например, эпизоды депрессивного расстройства при длительном употреблении алкоголя).</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F10-19.1</mob_psycho_100:hasMCBcode>
+        <psy_diseases_project:hasSuicideRisk rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:hasSuicideRisk>
         <psy_diseases_project:requiresHospitalisation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:requiresHospitalisation>
     </owl:NamedIndividual>
     
@@ -1193,6 +1205,12 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alex/ontologies/2025/11/untitled-ontology-7#Шиз">
         <rdf:type rdf:resource="http://www.semanticweb.org/алена/ontologies/2025/8/psy_diseases_project#Наименования_больных"/>
         <mob_psycho_100:isSynonym rdf:resource="http://www.semanticweb.org/alex/ontologies/2025/11/untitled-ontology-7#Шизофреник"/>
+        <psy_diseases_project:SuffersFrom rdf:resource="http://www.semanticweb.org/алена/ontologies/2025/8/psy_diseases_project#Гебефреническая_шизофрения"/>
+        <psy_diseases_project:SuffersFrom rdf:resource="http://www.semanticweb.org/алена/ontologies/2025/8/psy_diseases_project#Кататоническая_шизофрения"/>
+        <psy_diseases_project:SuffersFrom rdf:resource="http://www.semanticweb.org/алена/ontologies/2025/8/psy_diseases_project#Недифференцированная_шизофрения"/>
+        <psy_diseases_project:SuffersFrom rdf:resource="http://www.semanticweb.org/алена/ontologies/2025/8/psy_diseases_project#Параноидная_шизофрения"/>
+        <psy_diseases_project:SuffersFrom rdf:resource="http://www.semanticweb.org/алена/ontologies/2025/8/psy_diseases_project#Постшизофреническая_депрессия"/>
+        <psy_diseases_project:SuffersFrom rdf:resource="http://www.semanticweb.org/алена/ontologies/2025/8/psy_diseases_project#Шизотипическое_расстройство"/>
         <mob_psycho_100:isOffensive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mob_psycho_100:isOffensive>
     </owl:NamedIndividual>
     
@@ -1203,6 +1221,10 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alex/ontologies/2025/11/untitled-ontology-7#Шизофреник">
         <rdf:type rdf:resource="http://www.semanticweb.org/алена/ontologies/2025/8/psy_diseases_project#Наименования_больных"/>
         <mob_psycho_100:isSynonym rdf:resource="http://www.semanticweb.org/alex/ontologies/2025/11/untitled-ontology-7#Шиз"/>
+        <psy_diseases_project:SuffersFrom rdf:resource="http://www.semanticweb.org/алена/ontologies/2025/8/psy_diseases_project#Гебефреническая_шизофрения"/>
+        <psy_diseases_project:SuffersFrom rdf:resource="http://www.semanticweb.org/алена/ontologies/2025/8/psy_diseases_project#Кататоническая_шизофрения"/>
+        <psy_diseases_project:SuffersFrom rdf:resource="http://www.semanticweb.org/алена/ontologies/2025/8/psy_diseases_project#Недифференцированная_шизофрения"/>
+        <psy_diseases_project:SuffersFrom rdf:resource="http://www.semanticweb.org/алена/ontologies/2025/8/psy_diseases_project#Параноидная_шизофрения"/>
         <mob_psycho_100:isOffensive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</mob_psycho_100:isOffensive>
     </owl:NamedIndividual>
     
@@ -1261,6 +1283,7 @@
         <mob_psycho_100:hasSymptom rdf:resource="http://www.semanticweb.org/eliza/ontologies/2025/9/mob_psycho_100#Рассеянность"/>
         <mob_psycho_100:hasDescription>У пациента в данный момент имеются маниакальные явления без психотической симптоматики (как в подрубрике F30.1), и в прошлом отмечался, по крайней мере однократно, другой аффективный эпизод (гипоманиакальный, маниакальный, депрессивный или смешанного характера).</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F31.1</mob_psycho_100:hasMCBcode>
+        <psy_diseases_project:requiresHospitalisation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:requiresHospitalisation>
     </owl:NamedIndividual>
     
 
@@ -1280,6 +1303,8 @@
         <mob_psycho_100:hasSymptom rdf:resource="http://www.semanticweb.org/алена/ontologies/2025/8/psy_diseases_project#бред"/>
         <mob_psycho_100:hasDescription>У пациента в данный момент имеются маниакальные явления с психотической симптоматикой (как в подрубрике F30.2), и в прошлом отмечался, по крайней мере однократно, другой аффективный эпизод (гипоманиакальный, маниакальный, депрессивный или смешанного характера).</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F31.2</mob_psycho_100:hasMCBcode>
+        <psy_diseases_project:hasSuicideRisk rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:hasSuicideRisk>
+        <psy_diseases_project:requiresHospitalisation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:requiresHospitalisation>
     </owl:NamedIndividual>
     
 
@@ -1297,6 +1322,7 @@
         <mob_psycho_100:hasSymptom rdf:resource="http://www.semanticweb.org/eliza/ontologies/2025/9/mob_psycho_100#Снижение_дееспособности"/>
         <mob_psycho_100:hasDescription>Пациент в прошлом имел, по крайней мере однократно, подтвержденный гипоманиакальный, маниакальный, депрессивный или смешанный аффективный эпизод, а текущее состояние представляет собой сочетание маниакальных и депрессивных симптомов или их быструю смену.</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F31.6</mob_psycho_100:hasMCBcode>
+        <psy_diseases_project:hasSuicideRisk rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:hasSuicideRisk>
     </owl:NamedIndividual>
     
 
@@ -1314,6 +1340,7 @@
         <mob_psycho_100:hasDescription>У пациента в данный момент имеются явления депрессии, как при тяжелом депрессивном эпизоде без психотической симптоматике (F32.2), и в прошлом отмечался, по крайней мере однократно, подтвержденный гипоманиакальный, маниакальный или смешанный аффективный эпизод.</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F31.4</mob_psycho_100:hasMCBcode>
         <psy_diseases_project:hasSuicideRisk rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:hasSuicideRisk>
+        <psy_diseases_project:requiresHospitalisation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:requiresHospitalisation>
     </owl:NamedIndividual>
     
 
@@ -1331,6 +1358,7 @@
         <mob_psycho_100:hasDescription>У пациента в данный момент имеются явления депрессии, как при тяжелом депрессивном эпизоде с психотической симптоматикой (F32.3), и в прошлом отмечался, по крайней мере однократно, подтвержденный гипоманиакальный, маниакальный или смешанный аффективный эпизод</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F31.5</mob_psycho_100:hasMCBcode>
         <psy_diseases_project:hasSuicideRisk rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:hasSuicideRisk>
+        <psy_diseases_project:requiresHospitalisation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:requiresHospitalisation>
     </owl:NamedIndividual>
     
 
@@ -1381,6 +1409,7 @@
 
 Представлены только 2-3 симптома</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F33.0</mob_psycho_100:hasMCBcode>
+        <psy_diseases_project:hasDuration>Несколько месяцев</psy_diseases_project:hasDuration>
     </owl:NamedIndividual>
     
 
@@ -1399,6 +1428,8 @@
         <mob_psycho_100:hasDescription>Расстройство, характеризующееся повторными эпизодами депрессии. Текущий эпизод умеренно выражен (как описано в подрубрике F32.1) и без мании в анамнезе.
 Выражены четыре и более из вышеупомянутых симптомов. Пациент, вероятно, испытывает большие трудности при продолжении обычной деятельности.</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F33.1</mob_psycho_100:hasMCBcode>
+        <psy_diseases_project:hasDuration>Несколько месяцев</psy_diseases_project:hasDuration>
+        <psy_diseases_project:hasSuicideRisk rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:hasSuicideRisk>
     </owl:NamedIndividual>
     
 
@@ -1421,7 +1452,9 @@
 Витальная депрессия, рекуррентная без психотических симптомов
 Эпизод депрессии, при котором явно выражен ряд вышеупомянутых симптомов, приносящих страдание; обычны снижение самооценки и мысли о собственной никчемности или виновности. Характерны суицидальные мысли и попытки, обычно имеет место ряд псевдосоматических симптомов.</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F33.2</mob_psycho_100:hasMCBcode>
+        <psy_diseases_project:hasDuration>Несколько месяцев</psy_diseases_project:hasDuration>
         <psy_diseases_project:hasSuicideRisk rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:hasSuicideRisk>
+        <psy_diseases_project:requiresHospitalisation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:requiresHospitalisation>
     </owl:NamedIndividual>
     
 
@@ -1452,6 +1485,7 @@
         <mob_psycho_100:hasMCBcode>F33.3</mob_psycho_100:hasMCBcode>
         <psy_diseases_project:hasDuration>Несколько месяцев</psy_diseases_project:hasDuration>
         <psy_diseases_project:hasSuicideRisk rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:hasSuicideRisk>
+        <psy_diseases_project:requiresHospitalisation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:requiresHospitalisation>
     </owl:NamedIndividual>
     
 
@@ -1463,6 +1497,7 @@
         <mob_psycho_100:hasSymptom rdf:resource="http://www.semanticweb.org/eliza/ontologies/2025/9/mob_psycho_100#Боязнь_толпы_и_общественных_мест"/>
         <mob_psycho_100:hasDescription>Довольно хорошо очерченная группа фобий, включающая в себя боязнь выходить из дома, входить в магазины, боязнь толпы и общественных мест, боязнь в одиночку путешествовать поездом, автобусом, самолетом. Паническое расстройство является обычной чертой эпизодов и в прошлом, и в настоящем. Кроме того, в качестве дополнительной характеристики часто присутствуют депрессивный и навязчивые симптомы и социальные фобии. Часто выражено избегание фобических ситуаций, и лица, страдающие агорафобией, не испытывают большого беспокойства, так как они в состоянии избежать этих &quot;опасностей&quot;.</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F40.0</mob_psycho_100:hasMCBcode>
+        <psy_diseases_project:hasSuicideRisk rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:hasSuicideRisk>
     </owl:NamedIndividual>
     
 
@@ -1513,6 +1548,7 @@
 обессивная
 обессивно-компульсивная</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F60.5</mob_psycho_100:hasMCBcode>
+        <psy_diseases_project:hasDuration>Несколько лет</psy_diseases_project:hasDuration>
     </owl:NamedIndividual>
     
 
@@ -1655,6 +1691,7 @@
 состояние
 Невроз тревоги</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F41.1</mob_psycho_100:hasMCBcode>
+        <psy_diseases_project:hasSuicideRisk rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:hasSuicideRisk>
     </owl:NamedIndividual>
     
 
@@ -1749,6 +1786,8 @@
 психопатическая
 социопатическая</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F60.2</mob_psycho_100:hasMCBcode>
+        <psy_diseases_project:hasDuration>Несколько лет</psy_diseases_project:hasDuration>
+        <psy_diseases_project:hasSuicideRisk rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:hasSuicideRisk>
     </owl:NamedIndividual>
     
 
@@ -1973,6 +2012,7 @@
 пассивно-агрессивная
 психоневротическая</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F60.8</mob_psycho_100:hasMCBcode>
+        <psy_diseases_project:hasDuration>Несколько лет</psy_diseases_project:hasDuration>
     </owl:NamedIndividual>
     
 
@@ -1983,6 +2023,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/eliza/ontologies/2025/9/mob_psycho_100#Стойкие_изменения_личности,_не_связанные_с_повреждением_или_болезнью_головного_мозга"/>
         <mob_psycho_100:hasDescription>Хронический болевой личностный синдром</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F62.8</mob_psycho_100:hasMCBcode>
+        <psy_diseases_project:hasDuration>Несколько лет</psy_diseases_project:hasDuration>
     </owl:NamedIndividual>
     
 
@@ -2161,6 +2202,7 @@
 
 Нозофобия</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F45.2</mob_psycho_100:hasMCBcode>
+        <psy_diseases_project:hasSuicideRisk rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:hasSuicideRisk>
     </owl:NamedIndividual>
     
 
@@ -2200,6 +2242,7 @@
 истерическая
 психоинфантильная</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F60.4</mob_psycho_100:hasMCBcode>
+        <psy_diseases_project:hasDuration>Несколько лет</psy_diseases_project:hasDuration>
     </owl:NamedIndividual>
     
 
@@ -2664,6 +2707,7 @@
         <mob_psycho_100:hasSymptom rdf:resource="http://www.semanticweb.org/eliza/ontologies/2025/9/mob_psycho_100#Сужение_области_внимания"/>
         <mob_psycho_100:hasSymptom rdf:resource="http://www.semanticweb.org/eliza/ontologies/2025/9/mob_psycho_100#Сужение_области_сознания"/>
         <mob_psycho_100:hasSymptom rdf:resource="http://www.semanticweb.org/eliza/ontologies/2025/9/mob_psycho_100#Тахикардия"/>
+        <psy_diseases_project:Transitions rdf:resource="http://www.semanticweb.org/eliza/ontologies/2025/9/mob_psycho_100#Посттравматическое_стрессовое_расстройство"/>
         <mob_psycho_100:hasDescription>Преходящее расстройство, которое развивается у человека без каких-либо других проявлений психических расстройств в ответ на необычный физический или психический стресс и обычно стихает через несколько часов или дней. В распространенности и тяжести стрессовых реакций имеют значение индивидуальная ранимость и способность владеть собой. Симптомы показывают типичную смешанную и изменчивую картину и включают первоначальное состояние &quot;ошеломления&quot; с некоторым сужением области сознания и внимания, невозможностью полностью осознать раздражители и дезориентированностью. Это состояние может сопровождаться последующим &quot;уходом&quot; из окружающей ситуации (до состояния диссоциативного ступора - F44.2) или ажиатацией и сверхактивностью (реакция полета или фуги). Обычно присутствуют отдельные черты панического расстройства (тахикардия, избыточное потоотделение, покраснение). Симптоматика обычно проявляется через несколько минут после воздействия стрессовых стимулов или события и исчезает через 2-3 дня (часто через несколько часов). Может присутствовать частичная или полная амнезия (F44.0) на стрессовое событие. Если вышеуказанная симптоматика устойчива, необходимо изменить диагноз.
 
 Острая:
@@ -2867,6 +2911,7 @@
 параноидная
 обидчиво параноидная</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F60.0</mob_psycho_100:hasMCBcode>
+        <psy_diseases_project:hasDuration>Несколько лет</psy_diseases_project:hasDuration>
     </owl:NamedIndividual>
     
 
@@ -2907,6 +2952,7 @@
 
 Навязчивое влечение к азартным играм</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F63.0</mob_psycho_100:hasMCBcode>
+        <psy_diseases_project:hasSuicideRisk rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:hasSuicideRisk>
     </owl:NamedIndividual>
     
 
@@ -3103,6 +3149,8 @@
 
 Травматический невроз</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F43.1</mob_psycho_100:hasMCBcode>
+        <psy_diseases_project:hasSuicideRisk rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:hasSuicideRisk>
+        <psy_diseases_project:requiresHospitalisation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:requiresHospitalisation>
     </owl:NamedIndividual>
     
 
@@ -3481,6 +3529,7 @@
 пассивная
 самоподавляющая</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F60.7</mob_psycho_100:hasMCBcode>
+        <psy_diseases_project:hasDuration>Несколько лет</psy_diseases_project:hasDuration>
     </owl:NamedIndividual>
     
 
@@ -3721,6 +3770,7 @@
 
 Тревожная депрессия (легкая или неустойчивая)</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F41.2</mob_psycho_100:hasMCBcode>
+        <psy_diseases_project:hasSuicideRisk rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:hasSuicideRisk>
     </owl:NamedIndividual>
     
 
@@ -3783,6 +3833,7 @@
 
 Множественное психосоматическое расстройство</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F45.0</mob_psycho_100:hasMCBcode>
+        <psy_diseases_project:hasDuration>Несколько лет</psy_diseases_project:hasDuration>
     </owl:NamedIndividual>
     
 
@@ -3887,6 +3938,7 @@
 
 Социальный невроз</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F40.1</mob_psycho_100:hasMCBcode>
+        <psy_diseases_project:hasSuicideRisk rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:hasSuicideRisk>
     </owl:NamedIndividual>
     
 
@@ -3896,6 +3948,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eliza/ontologies/2025/9/mob_psycho_100#Стойкое_изменение_личности_неуточненное">
         <rdf:type rdf:resource="http://www.semanticweb.org/eliza/ontologies/2025/9/mob_psycho_100#Стойкие_изменения_личности,_не_связанные_с_повреждением_или_болезнью_головного_мозга"/>
         <mob_psycho_100:hasMCBcode>F62.9</mob_psycho_100:hasMCBcode>
+        <psy_diseases_project:hasDuration>Несколько лет</psy_diseases_project:hasDuration>
     </owl:NamedIndividual>
     
 
@@ -3922,6 +3975,7 @@
 нахождения в ситуации, угрожающей жизни, типа быть жертвой терроризма
 пыток</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F62.0</mob_psycho_100:hasMCBcode>
+        <psy_diseases_project:hasDuration>Несколько лет</psy_diseases_project:hasDuration>
     </owl:NamedIndividual>
     
 
@@ -3938,6 +3992,7 @@
         <mob_psycho_100:hasSymptom rdf:resource="http://www.semanticweb.org/eliza/ontologies/2025/9/mob_psycho_100#Чрезмерная_зависимость_от_других"/>
         <mob_psycho_100:hasDescription>Изменение личности, сохраняющееся по крайней мере два года, которое вызвано травмирующим влиянием страдания от тяжелой психической болезни. Изменение не может быть объяснено предшествующим расстройством личности. Его следует дифференцировать от остаточных проявлений шизофрении и других состояний неполного выздоровления после предшествующей психической болезни. Это расстройство характеризуется чрезмерной зависимостью и нуждаемостью в других. Убежденность человека в том, что болезнь изменила его и оставила на нем свое клеймо, приводит к неспособности формировать и поддерживать тесные доверительные межличностные отношения и ведет к социальной изоляции. Наблюдается пассивность, ограниченность интересов и слабая вовлекаемость в активное проведение досуга. Устойчивы жалобы на плохое самочувствие, которые могут быть связаны с ипохондрическими претензиями и болезненным поведением. Отмечается пониженное или неустойчивое настроение, не являющееся следствием текущего психического расстройства или предшествующей психической болезни с остаточными аффективными симптомами, а также давнишние проблемы социального и профессионального функционирования.</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F62.1</mob_psycho_100:hasMCBcode>
+        <psy_diseases_project:hasDuration>Несколько лет</psy_diseases_project:hasDuration>
     </owl:NamedIndividual>
     
 
@@ -4043,6 +4098,8 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eliza/ontologies/2025/9/mob_psycho_100#Транс">
         <rdf:type rdf:resource="http://www.semanticweb.org/алена/ontologies/2025/8/psy_diseases_project#Наименования_больных"/>
         <mob_psycho_100:isSynonym rdf:resource="http://www.semanticweb.org/eliza/ontologies/2025/9/mob_psycho_100#Транссексуал"/>
+        <psy_diseases_project:SuffersFrom rdf:resource="http://www.semanticweb.org/eliza/ontologies/2025/9/mob_psycho_100#Трансвестизм_двойной_роли"/>
+        <psy_diseases_project:SuffersFrom rdf:resource="http://www.semanticweb.org/eliza/ontologies/2025/9/mob_psycho_100#Транссексуализм"/>
         <mob_psycho_100:isOffensive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mob_psycho_100:isOffensive>
     </owl:NamedIndividual>
     
@@ -4081,6 +4138,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eliza/ontologies/2025/9/mob_psycho_100#Транссексуал">
         <rdf:type rdf:resource="http://www.semanticweb.org/алена/ontologies/2025/8/psy_diseases_project#Наименования_больных"/>
         <mob_psycho_100:isSynonym rdf:resource="http://www.semanticweb.org/eliza/ontologies/2025/9/mob_psycho_100#Транс"/>
+        <psy_diseases_project:SuffersFrom rdf:resource="http://www.semanticweb.org/eliza/ontologies/2025/9/mob_psycho_100#Транссексуализм"/>
         <mob_psycho_100:isOffensive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</mob_psycho_100:isOffensive>
     </owl:NamedIndividual>
     
@@ -4203,6 +4261,7 @@
 головная боль
 Соматоформное болевое расстройство</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F45.4</mob_psycho_100:hasMCBcode>
+        <psy_diseases_project:hasSuicideRisk rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:hasSuicideRisk>
     </owl:NamedIndividual>
     
 
@@ -4364,6 +4423,8 @@
         <mob_psycho_100:hasSymptom rdf:resource="http://www.semanticweb.org/eliza/ontologies/2025/9/mob_psycho_100#Слабость_социальных_и_других_контактов"/>
         <mob_psycho_100:hasDescription>Расстройство личности, характеризующееся слабостью привязанностей, социальных и других контактов, склонностью к фантазиям, отшельничеству и самоанализу. Имеет место ограниченная способность выражать чувства и испытывать удовольствие.</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F60.1</mob_psycho_100:hasMCBcode>
+        <psy_diseases_project:hasDuration>Несколько лет</psy_diseases_project:hasDuration>
+        <psy_diseases_project:hasSuicideRisk rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:hasSuicideRisk>
     </owl:NamedIndividual>
     
 
@@ -4417,6 +4478,8 @@
 пограничная
 возбудимая</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F60.3</mob_psycho_100:hasMCBcode>
+        <psy_diseases_project:hasDuration>Несколько лет</psy_diseases_project:hasDuration>
+        <psy_diseases_project:hasSuicideRisk rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:hasSuicideRisk>
     </owl:NamedIndividual>
     
 
@@ -4597,6 +4660,8 @@
         <mob_psycho_100:hasSymptom rdf:resource="http://www.semanticweb.org/eliza/ontologies/2025/9/mob_psycho_100#Отсутствие_ощущения_безопасности"/>
         <mob_psycho_100:hasDescription>Расстройство личности, характеризующееся ощущением внутренней напряженности, наличием мрачных предчувствий, отсутствием ощущения безопасности и комплексом неполноценности. Выражены постоянное сильное желание нравиться и быть признанным, сверхчувствительная реакция на отказы и критику наряду с ограничением личных привязанностей, тенденцией к избеганию некоторых действий путем привычного преувеличения потенциальных опасностей и риска в обыденных ситуациях.</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F60.6</mob_psycho_100:hasMCBcode>
+        <psy_diseases_project:hasDuration>Несколько лет</psy_diseases_project:hasDuration>
+        <psy_diseases_project:hasSuicideRisk rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:hasSuicideRisk>
     </owl:NamedIndividual>
     
 
@@ -4627,6 +4692,7 @@
         <mob_psycho_100:hasSymptom rdf:resource="http://www.semanticweb.org/алена/ontologies/2025/8/psy_diseases_project#слуховые_галлюцинации"/>
         <mob_psycho_100:hasDescription>Расстройство, характеризующееся развитием единственной картины бреда или серии связанных картин бреда, которые обычно устойчивы и иногда пожизненны. Содержание бреда или серии картин бреда чрезвычайно вариабельно. Совершенно несовместимыми с этим диагнозом являются четкие и устойчивые слуховые галлюцинации (голоса), шизофренические симптомы, такие, как бред контроля извне, и выраженная эмоциональная притупленность, а также явные признаки заболевания мозга. Однако наличие случайных или преходящих слуховых галлюцинаций, особенно у больных пожилого возраста, не исключает настоящего диагноза при условии, что они не являются типично шизофреническими и составляют только небольшую часть общей клинической картины.</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F22.0</mob_psycho_100:hasMCBcode>
+        <psy_diseases_project:hasDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:hasDuration>
         <psy_diseases_project:hasSuicideRisk rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</psy_diseases_project:hasSuicideRisk>
     </owl:NamedIndividual>
     
@@ -4655,6 +4721,9 @@
         <mob_psycho_100:hasSymptom rdf:resource="http://www.semanticweb.org/алена/ontologies/2025/8/psy_diseases_project#изоляция"/>
         <mob_psycho_100:hasDescription>Форма шизофрении, при которой доминируют аффективные изменения. Бред и галлюцинации поверхностны и фрагментарны, поведение нелепо и непредсказуемо, обычно манерничанье. Настроение изменчиво и неадекватно, мышление дезорганизовано, речь бессвязна. Имеется тенденция к социальной изоляции. Прогноз обычно неблагоприятен вследствие быстрого нарастания &quot;негативных&quot; симптомов, особенно аффективного уплощения и потери воли. Гебефрению следует диагностировать только в подростковом и юношеском возрасте.</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">F20.1</mob_psycho_100:hasMCBcode>
+        <psy_diseases_project:hasDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:hasDuration>
+        <psy_diseases_project:hasSuicideRisk rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:hasSuicideRisk>
+        <psy_diseases_project:requiresHospitalisation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:requiresHospitalisation>
     </owl:NamedIndividual>
     
 
@@ -4715,6 +4784,7 @@
         <mob_psycho_100:hasSymptom rdf:resource="http://www.semanticweb.org/алена/ontologies/2025/8/psy_diseases_project#слуховые_галлюцинации"/>
         <mob_psycho_100:hasDescription>Расстройства, при которых одна или несколько картин бреда сопровождаются устойчивыми галлюцинаторными голосами или шизофреническими симптомами, которые не укладываются в диагноз шизофрении</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F22.8</mob_psycho_100:hasMCBcode>
+        <psy_diseases_project:hasDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:hasDuration>
     </owl:NamedIndividual>
     
 
@@ -4745,6 +4815,9 @@
         <mob_psycho_100:hasSymptom rdf:resource="http://www.semanticweb.org/алена/ontologies/2025/8/psy_diseases_project#ступор"/>
         <mob_psycho_100:hasDescription>В клинической картине кататонической шизофрении доминируют чередующиеся психомоторные нарушения полярного характера, такие, как колебания между гиперкинезом и ступором или автоматическим подчинением и негативизмом. Скованные позы могут сохраняться в течение длительного времени. Примечательной особенностью состояния могут быть случаи резкого возбуждения. Кататонические проявления могут сочетаться со сноподобным (онейроидным) состоянием с яркими сценическими галлюцинациями.</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F20.2</mob_psycho_100:hasMCBcode>
+        <psy_diseases_project:hasDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:hasDuration>
+        <psy_diseases_project:hasSuicideRisk rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:hasSuicideRisk>
+        <psy_diseases_project:requiresHospitalisation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:requiresHospitalisation>
     </owl:NamedIndividual>
     
 
@@ -4776,6 +4849,8 @@
         <mob_psycho_100:hasSymptom rdf:resource="http://www.semanticweb.org/алена/ontologies/2025/8/psy_diseases_project#ступор"/>
         <mob_psycho_100:hasDescription>Психотическое состояние, отвечающее основным диагностическим критериям шизофрении, но не соответствующее какой-либо ее форме, классифицированной в подрубриках F20.0-F20.2, или проявляющее черты более чем одной из вышеуказанных форм без ярко выраженного преобладания специфического комплекса диагностических характеристик.</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F20.3</mob_psycho_100:hasMCBcode>
+        <psy_diseases_project:hasDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:hasDuration>
+        <psy_diseases_project:requiresHospitalisation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:requiresHospitalisation>
     </owl:NamedIndividual>
     
 
@@ -4879,6 +4954,9 @@
         <mob_psycho_100:hasSymptom rdf:resource="http://www.semanticweb.org/алена/ontologies/2025/8/psy_diseases_project#слуховые_галлюцинации"/>
         <mob_psycho_100:hasDescription>Параноидная форма шизофрении, при которой в клинической картине доминируют относительно устойчивый, часто параноидный бред, обычно сопровождающийся галлюцинациями, особенно слуховыми, и расстройства восприятия. Расстройства эмоций, воли, речи и кататонические симптомы отсутчтвуют или относительно слабо выражены.</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F20.0</mob_psycho_100:hasMCBcode>
+        <psy_diseases_project:hasDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:hasDuration>
+        <psy_diseases_project:hasSuicideRisk rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:hasSuicideRisk>
+        <psy_diseases_project:requiresHospitalisation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:requiresHospitalisation>
     </owl:NamedIndividual>
     
 
@@ -4893,7 +4971,9 @@
         <mob_psycho_100:hasSymptom rdf:resource="http://www.semanticweb.org/алена/ontologies/2025/8/psy_diseases_project#бредовое_восприятие"/>
         <mob_psycho_100:hasDescription>Депрессивный эпизод, который может быть длительным, возникающий как последствие заболевания шизофренией. Некоторые симптомы шизофрении (&quot;позитивные&quot; или &quot;негативные&quot;) все еще должны присутствовать, но они уже не доминируют в клинической картине. С этими депрессивными состояниями связан повышенный риск самоубийства. Если у пациента уже не обнаруживаются какие-либо симптомы шизофрении, следует ставить диагноз депрессивного эпизода (F32.-). Если симптомы шизофрении все еще ярки и четки, следует ставить диагноз соответствующего типа шизофрении (F20.0-F20.3).</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F20.4</mob_psycho_100:hasMCBcode>
+        <psy_diseases_project:hasDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:hasDuration>
         <psy_diseases_project:hasSuicideRisk rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:hasSuicideRisk>
+        <psy_diseases_project:requiresHospitalisation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:requiresHospitalisation>
     </owl:NamedIndividual>
     
 
@@ -5059,6 +5139,7 @@
         <mob_psycho_100:hasSymptom rdf:resource="http://www.semanticweb.org/алена/ontologies/2025/8/psy_diseases_project#слуховые_галлюцинации"/>
         <mob_psycho_100:hasDescription>Расстройство, характеризующееся эксцентричным поведением, аномалиями мышления и эмоциональных реакций, похожими на те, которые имеют место при шизофрении, однако отчетливые и характерные для шизофрении нарушения не обнаруживаются ни на какой стадии болезни. Симптомы могут включать холодность или неадекватность эмоциональных реакций, странное или эксцентричное поведение, склонность к социальной изоляции, параноидные или необычные идеи, не доходящие до явно выраженного бреда, болезненную навязчивость, нарушение мышления и расстройства восприятия, редкие преходящие квазипсихотические эпизоды с выраженными иллюзорными ощущениями, слуховыми или другими галлюцинациями, бредовыми идеями, обычно возникающими без видимых причин. Отсутствует определенность начала болезни и ее развития, а ее течение обычно такое же, как и при расстройстве личности.</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F21</mob_psycho_100:hasMCBcode>
+        <psy_diseases_project:hasDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:hasDuration>
         <psy_diseases_project:hasSuicideRisk rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</psy_diseases_project:hasSuicideRisk>
     </owl:NamedIndividual>
     
@@ -5434,6 +5515,8 @@
 Шизофреноформный психоз, депрессивный тип</mob_psycho_100:hasDescription>
         <mob_psycho_100:hasMCBcode>F25.1</mob_psycho_100:hasMCBcode>
         <psy_diseases_project:hasDuration>1 эпизод</psy_diseases_project:hasDuration>
+        <psy_diseases_project:hasSuicideRisk rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:hasSuicideRisk>
+        <psy_diseases_project:requiresHospitalisation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:requiresHospitalisation>
     </owl:NamedIndividual>
     
 
@@ -5455,6 +5538,8 @@
 
 Шизофреноформный психоз, маниакальный тип</mob_psycho_100:hasMCBcode>
         <psy_diseases_project:hasDuration>1 эпизод</psy_diseases_project:hasDuration>
+        <psy_diseases_project:hasSuicideRisk rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:hasSuicideRisk>
+        <psy_diseases_project:requiresHospitalisation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</psy_diseases_project:requiresHospitalisation>
     </owl:NamedIndividual>
     
 
